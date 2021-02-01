@@ -145,7 +145,7 @@ ggsave(
 
 #read in centroids (this .csv is in "Data" folder)
 #"dist_final" represents distances between consecutive seasonal home ranges
-cent <- read.csv("G:/My Drive/GitHub/Petracca_et_al_2021_ConSciandPractice/Data/centroids_core.csv", header=T)
+cent <- read.csv("centroids_core.csv", header=T)
 cent <- cent[!is.na(cent$dist_final),]
 
 #remove Raah and Jericho
