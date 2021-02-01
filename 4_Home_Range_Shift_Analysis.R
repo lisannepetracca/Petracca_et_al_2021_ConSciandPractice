@@ -136,7 +136,7 @@ library(ggplot2)
 plot_grid(NP, nonPA, labels = c('A', 'B'), ncol=1)
 
 ggsave(
-  "Proportion_Plot.pdf",
+  "Figure3.pdf",
   plot = last_plot(),
   path = "Figures")
 
@@ -190,6 +190,6 @@ test <- wilcox_test(dist_final ~ sex, data = cent,
 f <- ggplot(cent, aes(period, dist_final))
 f + geom_violin() +facet_grid(rows = vars(sex), cols = vars(treated))+stat_summary(fun.y=mean, geom="point",size=2)
 ggsave(
-  "Violin_Plot.pdf",
+  "Figure2.pdf",
   plot = last_plot(),
   path = "Figures")
