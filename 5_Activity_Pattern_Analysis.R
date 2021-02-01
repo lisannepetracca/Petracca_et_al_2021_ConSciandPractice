@@ -53,5 +53,5 @@ c <- ggplot(all, aes(hour, color=group, fill=group)) + geom_density(kernel = "ga
   scale_color_brewer(palette="Accent")
 c
 ggsave(
-  "Figures/ActivityPattern.pdf",
+  "Figures/Figure4.pdf",
   plot = last_plot())
